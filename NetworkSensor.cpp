@@ -5,7 +5,7 @@ NetworkSensor::NetworkSensor(char** strings, int nstrings, char** floats, int nf
 {
   for(int i=0; i<nstrings; ++i) logs(strings[i], "");
   for(int i=0; i<nfloats; ++i)  logf(floats[i], 0.0);
-  for(int i=0; i<nints; ++i)    logs(ints[i], 0);
+  for(int i=0; i<nints; ++i)    logi(ints[i], 0);
 }
 
 NetworkSensor::~NetworkSensor(){}
